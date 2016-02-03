@@ -5,7 +5,6 @@ public void setup()
 }
 public void draw()
 {
-	//noLoop();
 	fill(153, 201, 255, 125);
 	noStroke();
 	sierpinski(pmouseX, pmouseY, 50);
