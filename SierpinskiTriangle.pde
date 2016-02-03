@@ -1,23 +1,23 @@
 public void setup()
 {
 	size(500, 500);
-	background(0);
+	background(255);
 }
 public void draw()
 {
-	noLoop();
+	//noLoop();
 	fill(153, 201, 255, 125);
-	strokeWeight(0.5);
-	stroke(255);
-	sierpinski(0, 500, 500);
+	noStroke();
+	sierpinski(pmouseX, pmouseY, 50);
 }
-public void mouseDragged()//optional
+public void mouseClicked()
 {
-
+	loop();
+	background(255);
 }
 public void sierpinski(int x, int y, int len) 
 {
-	if (len > 30)
+	if (len > 10)
 	{
 		sierpinski(x, y, len/2);
 		sierpinski(x + len/2, y, len/2);
