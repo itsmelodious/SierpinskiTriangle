@@ -10,6 +10,7 @@ public void draw()
 		fill(153, 201, 255, 125);
 		noStroke();
 		sierpinski(pmouseX, pmouseY, 50);
+		sierpinski((pmouseX + (int)(Math.random()*100)-50), (pmouseY + (int)(Math.random()*100)-50), (int)(Math.random()*25)+10);
 		if (mouseButton == RIGHT)
 			background(255);
 	}
